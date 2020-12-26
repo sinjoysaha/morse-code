@@ -22,7 +22,7 @@
 
 ## About the Project
 
-Built with :heart: using plain javascript, [`Arcade Games`](https://sinjoysaha.github.io/morse-code/) is a collection of the nostalgic coin-op games of the 70s to 90s era.
+Built with :heart: using plain javascript, [`Morse Code`](https://sinjoysaha.github.io/morse-code/) is a website to translate between English and Morse Code.
 
 [![Project Image](docs/images/projectimage.png)](https://sinjoysaha.github.io/morse-code/)
 
@@ -34,7 +34,7 @@ Built with :heart: using plain javascript, [`Arcade Games`](https://sinjoysaha.g
 
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contribution you make is **greatly appreciated**.
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature`)
