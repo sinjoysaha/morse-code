@@ -9,12 +9,12 @@ body {
     margin: 0;
 }
 h1, h2 {
-    font-size: calc(12px + 1.2vw);
+    font-size: calc(15px + 1.1vw);
     text-decoration: none;
     color: #000000;
 }
 a {
-    font-size: calc(12px + 1.2vw);
+    font-size: calc(15px + 1.1vw);
     text-decoration: none;
     color: #000000;
 }
@@ -26,7 +26,7 @@ p {
 }
 header {
     height: 80px;
-    font-size: 0.8em;
+    font-size: calc(15px + 1.1vw); /* 0.8em; */
     background-color: #e6e6e6;
 }
 #header-container {
@@ -45,13 +45,13 @@ header {
     left: 0;
     right: 0;
     width: 86%;
-    height: calc(10px + 20%);
+    height: calc(15px + 20%);
     margin: auto;
     padding: 2px;
     position: absolute;
 }
 .col-1 a {
-    font-size: calc(12px + 1.2vw);    
+    font-size: calc(20px + 1.1vw);
     font-weight: bold;
 }
 .main-container {
@@ -61,11 +61,21 @@ header {
 }
 .col-2-left {
     margin: auto;
-    width: 42%;
+    width: 35%;
     float: left;
     padding: 10px 5px;   
     text-align: right; 
     align-self: center;
+}
+@media screen and (max-width: 450px) {
+    .col-2-left {
+        margin: auto;
+        width: 35%;
+        float: left;
+        padding: 10px 5px;   
+        text-align: right; 
+        align-self: center;
+    }
 }
 .col-2-right {
     margin: auto;
@@ -75,10 +85,29 @@ header {
     text-align: left; 
     align-self: center;
 }
-
+@media screen and (max-width: 450px) {
+    .col-2-right {
+        margin: auto;
+        width: 50%;
+        float: left;
+        padding: 10px 5px;   
+        text-align: left; 
+        align-self: center;
+    }
+}
 .text-area:after {
     clear: both;
 }
+#inputtext {
+    width: 100%;
+}
+.within-col-2-right {
+    width: 80%;
+}
+.within-col-2-right button{
+    text-align: center;
+}
+
 .action-area {
     padding-top: 100px;
 }

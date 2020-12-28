@@ -22,14 +22,20 @@
                     <label for="outputtext">Morse:  </label>
                 </div>  
                 <div class="col-2-right">
-                    <input id="inputtext" name="inputtext"><br><br>
-                    <output for="inputtext" id="outputtext" name="outputtext"></output>        
+                    <div class="within-col-2-right">
+                        <input id="inputtext" name="inputtext"><br><br>
+                    </div>                                    
+                    <div class="within-col-2-right">
+                        <output for="inputtext" id="outputtext" name="outputtext"></output>        
+                    </div>
                 </div>
             </div>
             <div class="action-area">
                 <div class="col-2-left"></div>
                 <div class="col-2-right">
-                    <button type="button" id="translate-btn" onclick="translateEng2Morse()">Translate</button>
+                    <div class="within-col-2-right">
+                        <button type="button" id="translate-btn" onclick="translateEng2Morse()">Translate</button>
+                    </div>
                 </div>
             </div>
         </div>
