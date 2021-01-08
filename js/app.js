@@ -6,13 +6,12 @@ var code = {'A': '.-', 'B': '-...', 'C': '-.-.', 'D': '-..', 'E': '.', 'F': '..-
         '?': '..--..', '=': '-...-'};
 
 function translateEng2Morse() {
-    var inputtext =  document.getElementById("inputtext").value;
-    var outputtext =  document.getElementById("outputtext");    
+    const inputtext =  document.getElementById("inputtext").value;
+    const outputtext =  document.getElementById("outputtext");    
     
     var result = translate(inputtext);
-
     outputtext.innerHTML = result;
-}
+};
 
 function translate(inputtext) {
     var str = inputtext.toUpperCase();
@@ -24,4 +23,12 @@ function translate(inputtext) {
         ss = ss + code[str.charAt(i)] + " ";
     }
     return ss
-}
+};
+
+function playAudio() {
+    var dit = new Audio("../../audio/dit.wav");
+    var dah = new Audio("../../audio/dah.wav");
+
+    dit.play();
+    dah.play();
+};

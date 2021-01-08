@@ -107,15 +107,17 @@ header {
 .within-col-2-right button{
     text-align: center;
 }
-
 .action-area {
     padding-top: 100px;
 }
-#translate-btn {
+#translate-btn, #play-audio-btn {
     background-color: #2caf53;
     color: #ffffff;
     border: none;
     padding: 5px;
+}
+#translate-btn:hover, #play-audio-btn:hover {
+    background-color: #318d4d;
 }
 .col-3 {
     margin: auto;
