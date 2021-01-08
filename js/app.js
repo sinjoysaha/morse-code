@@ -26,8 +26,8 @@ function translate(inputtext) {
 };
 
 function playAudio() {
-    var dit_path = "audio/dit.wav";
-    var dah_path = "audio/dah.wav";
+    var dit_path = "https://sinjoysaha.github.io/morse-code/audio/dit.wav";
+    var dah_path = "https://sinjoysaha.github.io/morse-code/audio/dah.wav";
     var dit = new Audio(dit_path);
     var dah = new Audio(dah_path);
 
