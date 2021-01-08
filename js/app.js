@@ -26,8 +26,10 @@ function translate(inputtext) {
 };
 
 function playAudio() {
-    var dit = new Audio("../../audio/dit.wav");
-    var dah = new Audio("../../audio/dah.wav");
+    var dit_path = "../audio/dit.wav";
+    var dah_path = "../audio/dah.wav";
+    var dit = new Audio(dit_path);
+    var dah = new Audio(dah_path);
 
     dit.play();
     dah.play();
