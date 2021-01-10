@@ -137,3 +137,23 @@ header {
         align-self: center;
     }
 }
+footer {
+    height: 80px;
+    font-size: calc(15px + 1.1vw); /* 0.8em; */
+    background-color: #e6e6e6;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+#footer-container {
+    width: 86%;
+    height: 80px;
+    margin: auto;
+    position: relative;
+    text-align: center;
+}
+#footer-container .col-1 a {
+    font-size: calc(10px + 1.1vw);
+    font-weight: normal;
+}

@@ -5,11 +5,14 @@ var code = {'A': '.-', 'B': '-...', 'C': '-.-.', 'D': '-..', 'E': '.', 'F': '..-
         '5': '.....', '6': '-....', '7': '--...', '8': '---..', '9': '----.', '.': '.-.-.-', ',': '--..--',
         '?': '..--..', '=': '-...-'};
 
+
+var result;
+
 function translateEng2Morse() {
     const inputtext =  document.getElementById("inputtext").value;
     const outputtext =  document.getElementById("outputtext");    
     
-    var result = translate(inputtext);
+    result = translate(inputtext);
     outputtext.innerHTML = result;
 };
 
@@ -22,7 +25,7 @@ function translate(inputtext) {
         else
         ss = ss + code[str.charAt(i)] + " ";
     }
-    return ss
+    return ss;
 };
 
 function playAudio() {
@@ -31,6 +34,39 @@ function playAudio() {
     var dit = new Audio(dit_path);
     var dah = new Audio(dah_path);
 
-    dit.play();
-    dah.play();
+    //dit.play();
+    //dah.play();
+    for (var i = 0; i < result.length; i++) {
+        if(result.charAt(i)=='.'){
+            console.log("Playing dit");
+            dit.play();
+            console.log("Played dit");
+            console.log("Played dit"+dit.played);
+            pause(1000, dit);
+            console.log("Paused after dit");
+            
+        }
+        else if(result.charAt(i)=='-') {
+            dah.play();
+            wait(1000);
+        }
+        else {
+            wait(1000);
+        }
+
+    }
+};
+
+function pause(numberMillis, snd) { 
+    // var now = new Date(); 
+    // var exitTime = now.getTime() + numberMillis; 
+    // while (true) { 
+    //     now = new Date(); 
+    //     if (now.getTime() > exitTime) 
+    //         return; 
+    // }
+    while (true) { 
+        if(snd.currentTine == snd.duration)
+        return;
+    }
 };
